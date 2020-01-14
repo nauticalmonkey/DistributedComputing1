@@ -1,11 +1,11 @@
-Moscow, 83843, ID
-Vancouver, V5K 0A8, BC 
-Winnipeg, R2C 0G3, MB
-San Francisco, 94140, CA
-San Jose, 95111, CA
-Calgary, T1Y 3A8, AB
-Edmonton, T5A 0W4, AB
-Volgograd, 400001, VO
-Gilroy, 95020, CA
-Alaxandria, 22304, VA
-Charleston, 29401, SC
+Moscow, 83843, ID, 855
+Vancouver, V5K 0A8, BC, 604
+Winnipeg, R2C 0G3, MB, 306
+San Francisco, 94140, CA, 415
+San Jose, 95111, CA, 408
+Calgary, T1Y 3A8, AB, 403
+Edmonton, T5A 0W4, AB, 780
+Volgograd, 400001, VO, 506
+Gilroy, 95020, CA, 408
+Alaxandria, 22304, VA, 905
+Charleston, 29401, SC, 843
