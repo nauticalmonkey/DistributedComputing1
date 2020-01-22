@@ -13,6 +13,7 @@ import jdk.nashorn.internal.runtime.StoredScript;
 import java.nio.charset.StandardCharsets;
 import java.util.GregorianCalendar;
 import java.sql.Time;
+import java.io.FileWriter;
 
 public class Filemaker {
 
@@ -46,6 +47,9 @@ public class Filemaker {
         lNameWrite = readFileInList("lastNames.txt");
         String toWrite;
         int rand_int2;
+        File myObj = new File("Customer.txt");
+        myObj.createNewFile();
+        FileWriter myWriter = new FileWriter("Customer.txt");
 
         for (int i = 1; i <= amount; i++) {
             rand_int1 = rand.nextInt((int) fNamesWrite.length);
@@ -66,9 +70,9 @@ public class Filemaker {
             rand_int2 = (rand.nextInt(8) + 1) * 1000;
             rand_int1 += rand_int2;
             toWrite = toWrite.concat(rand_int1 + "");
-            System.out.println(toWrite);
-
+            myWriter.write(toWrite+"\n");
         }
+        myWriter.close();
 
     }
 
@@ -106,6 +110,7 @@ public class Filemaker {
             rand_int2 = (rand.nextInt(8) + 1) * 1000;
             rand_int1 += rand_int2;
             toWrite = toWrite.concat(rand_int1 + "");
+
             System.out.println(toWrite);
 
         }
@@ -226,7 +231,7 @@ public class Filemaker {
     public static void main(String[] args) {
         try {
             // CreateStores(100);
-            // CreatePeople(1000);
+            CreatePeople(1000);
             // SaleMaker(2000);
             //ProductMaker();
             LineItems(4000);
