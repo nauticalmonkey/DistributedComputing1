@@ -1,0 +1,4 @@
+John Adams, 1, CSC369, B
+Willam Sand, 2, CSC369, A
+Donald Burlage, 5, CSC678, A
+John Adams, 1, CSC594, A
